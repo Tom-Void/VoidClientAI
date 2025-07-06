@@ -1,0 +1,11 @@
+// CORE MINECRAFT FORGE API
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+@SubscribeEvent
+public void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
+    if (event.getPlayer() instanceof ServerPlayer) {
+        ServerPlayer player = (ServerPlayer) event.getPlayer();
+        player.sendSystemMessage(Component.literal("Welcome!"));
+    }
+}
