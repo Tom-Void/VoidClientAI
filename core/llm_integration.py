@@ -55,7 +55,7 @@ class LLMEngine:
     def _load_minecraft_context(self):
         """Load optimized Minecraft context"""
         try:
-            context_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'minecraft_api', 'forge_context.txt')
+            context_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'minecraft_api', 'fabric_context.txt')
             context_path = os.path.abspath(context_path)
 
             if os.path.exists(context_path):

@@ -4,24 +4,181 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebf69d12-db18-4da9-93f4-bf5b0302025d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/VoidClientAI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/code_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/file_operations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/llm_integration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/memory_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/minecraft_api/forge_context.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/cli_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/gui_stubs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Generated.java" afterDir="false" />
+    <list default="true" id="ebf69d12-db18-4da9-93f4-bf5b0302025d" name="Changes" comment="AI">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/ai_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/build_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/config_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/context_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/error_analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/intelligence/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/intelligence/code_analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/intelligence/code_quality_analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/intelligence/error_prediction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/intelligence/learning_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/intelligence/multi_agent_system.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/intelligence/pattern_learner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/intelligence/suggestion_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/optimization/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/optimization/cache_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/optimization/gpu_accelerator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/optimization/memory_optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/optimization/model_quantizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/optimization/thread_pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/performance_monitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/project_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/real_time/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/real_time/execution_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/real_time/feedback_loop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/real_time/file_watcher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/real_time/hot_reload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/real_time/live_compiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/real_time_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/security/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/security/audit_logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/security/file_guardian.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/security/network_monitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/security/permission_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/security/sandbox_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/security_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/config/learning_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/config/main_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/config/security_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/config/user_preferences.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/logs/ai_decisions/ai_decisions.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/logs/build/build_results.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/logs/error_analysis/error_analysis.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/logs/errors/errors.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/logs/performance/performance.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/logs/security/security.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/logs/user_activity/user_activity.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/best_practices/common_mistakes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/best_practices/fabric_conventions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/best_practices/mixin_best_practices.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/best_practices/performance_tips.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/common_patterns/basic_block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/common_patterns/basic_item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/common_patterns/block_entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/common_patterns/event_callbacks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/common_patterns/mixin_example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/common_patterns/networking_example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/common_patterns/recipe_provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/fabric_context.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/1.20.1/blocks_api.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/1.20.1/core_api.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/1.20.1/datagen_api.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/1.20.1/entities_api.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/1.20.1/fabric_events_api.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/1.20.1/items_api.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/1.20.1/mixins_api.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/1.20.1/networking_api.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/mappings/method_signatures.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/minecraft_api/versions/mappings/yarn_1.20.1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/security/allowed_operations.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/security/network_rules.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/security/permissions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/build_templates/fabric.mod.json.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/build_templates/fabric_1.20.1_gradle.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/build_templates/gradle.properties.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/code_patterns/data_generation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/code_patterns/fabric_events.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/code_patterns/mixin_patterns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/code_patterns/registry_patterns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/mod_templates/basic_fabric_mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/mod_templates/block_mod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/mod_templates/datagen_mod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/mod_templates/entity_mod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/templates/mod_templates/item_mod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/user_preferences.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/API.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ARCHITECTURE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/SETUP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/examples/advanced_features.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/examples/basic_usage.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/examples/plugin_development.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/dialogs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/dialogs/error_report_dialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/dialogs/permission_dialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/dialogs/project_wizard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/dialogs/settings_dialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/ide_integration/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/ide_integration/intellij_plugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/ide_integration/pycharm_plugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/ide_integration/vscode_extension.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/layout_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/main_application.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/theme_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/chat_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/code_diff_viewer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/code_editor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/learning_progress.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/log_viewer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/performance_dashboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/project_explorer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/security_panel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/gui/widgets/terminal_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/api/code_hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/api/data_hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/api/ui_hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/plugin_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements-dev.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/backup_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/performance_benchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/run_tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/setup.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/setup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/update_api_context.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/test_inputs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/integration/test_ai_learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/integration/test_full_workflow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/integration/test_minecraft_project.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/performance/test_generation_speed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/performance/test_memory_usage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/performance/test_model_performance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/test_build_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/test_code_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/test_file_operations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/test_llm_integration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/test_memory_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/deployment/dependency_installer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/deployment/model_downloader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/deployment/setup_environment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/development/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/development/benchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/development/profiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/development/test_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/development/validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/minecraft_tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/minecraft_tools/asset_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/minecraft_tools/mappings_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/minecraft_tools/minecraft_tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/minecraft_tools/version_detector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/model_utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/model_utils/context_compressor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/model_utils/fine_tuner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/model_utils/model_optimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/llm_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/llm_integration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/memory_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/memory_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/minecraft_api/forge_context.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/cli_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/cli_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/data/memory_db/667a52ad4fe1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/gui_stubs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +225,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Coding\VoidClientAI" />
+      <recent name="C:\Coding\VoidClientAI\data\logs\build" />
+      <recent name="C:\Coding\VoidClientAI\data\logs\error_analysis" />
+      <recent name="C:\Coding\VoidClientAI\data\logs\performance" />
+      <recent name="C:\Coding\VoidClientAI\data\logs\ai_decisions" />
+      <recent name="C:\Coding\VoidClientAI\data\learning" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -94,11 +255,41 @@
       <workItem from="1751637547620" duration="1715000" />
       <workItem from="1751800608785" duration="2121000" />
       <workItem from="1751812462843" duration="4315000" />
+      <workItem from="1751842798556" duration="6374000" />
     </task>
+    <task id="LOCAL-00001" summary="AI">
+      <option name="closed" value="true" />
+      <created>1751842824715</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751842824715</updated>
+    </task>
+    <task id="LOCAL-00002" summary="AI">
+      <option name="closed" value="true" />
+      <created>1751842850506</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751842850506</updated>
+    </task>
+    <task id="LOCAL-00003" summary="AI">
+      <option name="closed" value="true" />
+      <created>1751842919871</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751842919871</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="AI" />
+    <option name="LAST_COMMIT_MESSAGE" value="AI" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VoidClientAI$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1751407117499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python" />

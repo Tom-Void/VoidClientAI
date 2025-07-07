@@ -12,7 +12,7 @@ class CLIInterface:
     def __init__(self, safe_mode=True):
         try:
             # Point to your downloaded model
-            model_path = "C:/Coding/VoidClientAI/CodeLlama-7b-hf"
+            model_path = "/models/CodeLlama-7b-hf"
             self.llm = LLMEngine(model_path=model_path)
 
             # Initialize memory manager
@@ -124,6 +124,23 @@ class CLIInterface:
             print(f"\n💥 Critical error: {e}", file=sys.stderr)
             return None, None
 
+
+# Add to LLMEngine class
+def _adaptive_context_loading(self, user_input):
+    """Load only relevant context based on user request"""
+    context_keywords = {
+        'block': 'block_api_context.txt',
+        'item': 'item_api_context.txt',
+        'entity': 'entity_api_context.txt',
+        'event': 'event_api_context.txt'
+    }
+
+    relevant_contexts = []
+    for keyword, file in context_keywords.items():
+        if keyword in user_input.lower():
+            relevant_contexts.append(self._load_context_file(file))
+
+    return '\n'.join(relevant_contexts) if relevant_contexts else self.minecraft_context
 
 def setup_arg_parser():
     """Configure the argument parser with all options"""
