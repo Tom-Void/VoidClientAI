@@ -1,0 +1,30 @@
+// Basic Fabric Context for Minecraft 1.20.1
+
+package com.example.mod;
+
+import net.fabricmc.api.ModInitializer;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.Registries;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
+
+// Basic mod structure
+public class ExampleMod implements ModInitializer {
+    public static final String MOD_ID = "example_mod";
+
+    @Override
+    public void onInitialize() {
+        // Mod initialization
+    }
+
+    public static Identifier id(String path) {
+        return new Identifier(MOD_ID, path);
+    }
+}
+
+// Common imports for Fabric 1.20.1
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Material;
+import net.minecraft.sound.BlockSoundGroup;
